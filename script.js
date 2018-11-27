@@ -13,7 +13,7 @@ const Counter = (function counterIIFE() {
             return currentValue;
         }
     }
-}());
+})();
 
 const counter = document.getElementById('counter');
 
@@ -21,12 +21,12 @@ document.getElementById('counter').innerText = Counter.currentValue()
 
 document.getElementById('increment').addEventListener('click', function(){
     counter.innerText = Counter.incrementCounter()
-    createToast('WOOW! Znowu się udało!!');
+    createToast('To działa!NIESAMOWITE');
 });
 
 document.getElementById('decrement').addEventListener('click', function(){
     counter.innerText = Counter.decrementCounter()
-    createToast('To działa!NIESAMOWITE');
+    createToast('WOOW! Znowu się udało!!');
 });
 
 function createToast(message) {
