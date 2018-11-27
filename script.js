@@ -21,12 +21,12 @@ document.getElementById('counter').innerText = Counter.currentValue()
 
 document.getElementById('increment').addEventListener('click', function(){
     counter.innerText = Counter.incrementCounter()
-    createToast('To działa!NIESAMOWITE');
+    createToast('To działa!NIESAMOWITE!');
 });
 
 document.getElementById('decrement').addEventListener('click', function(){
     counter.innerText = Counter.decrementCounter()
-    createToast('WOOW! Znowu się udało!!');
+    createToast('WOW! Znowu się udało!!');
 });
 
 function createToast(message) {
