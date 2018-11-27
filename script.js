@@ -21,13 +21,13 @@ document.getElementById('counter').innerText = Counter.currentValue()
 
 document.getElementById('increment').addEventListener('click', function(){
     counter.innerText = Counter.incrementCounter()
-    createToast('WOOW! Udało się!!');
-})
+    createToast('WOOW! Znowu się udało!!');
+});
 
 document.getElementById('decrement').addEventListener('click', function(){
     counter.innerText = Counter.decrementCounter()
     createToast('To działa!NIESAMOWITE');
-})
+});
 
 function createToast(message) {
     const toast = document.createElement('div');
@@ -37,5 +37,5 @@ function createToast(message) {
     setTimeout(() => {
         toast.remove()
     }, 1500)
-}
+};
 
